@@ -36,7 +36,7 @@ Which means we should be looking at a structure like this:
         - `index.html`
 
 
-Next, copy the contents of the [main.py](main.py) into your `main.py`
+Next, copy the contents of the [main.py](main.next.py) into your `main.py`
 
 Then, run flask again
 
@@ -44,3 +44,23 @@ Then, run flask again
 `flask run`
 
 And go to `http://127.0.0.1:5000/` in your browser. You should be pleasantly suprised :smiley:
+
+If you were surprised, then let's carry on. And let's now push this to a _real_ **Flask app**
+
+1. Copy-paste the contents of the [main.py](main.py) to your `main.py`
+2. Copy-paste the contents of the [index.html](index.html) to your `index.html`
+
+Only a couple of things to note here
+1. I've added the JQuery library into the HTML so I can do `get` and `post` to my Flask server (_So, I'm hoping you know how to use it_ :grin:)
+2. The `main.py` has two new routes to the server
+
+`/hellothere/`: That takes two parameters: `firstname` and `lastname`
+These are the names of the arguments in the `hellothere` function. Look at the JQuery code in the `index.html` for how this route is called.
+
+**Importantly**: The names in the route _must_ be identical to the names in the function argument
+
+The `/squarethenumber/` doesn't have arguments because that's a POST method. So, you'll probably send the stuff as part of a post request. Again, to see how this is called, look at the `index.html`
+
+A couple of final points:
+1. Every time you make a change in the `index.html` or the `main.py`, you're going to have to stop and then start `flask`
+1. I'm assuming that you know JQuery!
