@@ -5,7 +5,7 @@ app = Flask(__name__)
 def get_index():
     return render_template("index.html")
 
-@app.route('/hellothere/<firstname>/<lastname>', methods=['GET'])
+@app.route('/hellothere/<firstname>/<lastname>')
 def hellothere(firstname, lastname):
     return 'Hello ' + firstname + ' ' + lastname
 
