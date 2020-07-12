@@ -1,6 +1,5 @@
 # Get started with Flask
 ## Install Flask
-(Got this all from the [Flask Quickstart](https://flask.palletsprojects.com/en/1.1.x/quickstart/#quickstart))
 1. Go to the command prompt and type `pip install Flask`
 1. Create a file named `main.py` (_You can name it whatever you want but I've gone for boring_)
 1. For your first (and super basic) `main.py` file, copy-paste the contents from [here](main.basic.py).
@@ -64,3 +63,7 @@ The `/squarethenumber/` doesn't have arguments because that's a POST method. So,
 A couple of final points:
 1. Every time you make a change in the `index.html` or the `main.py`, you're going to have to stop and then start `flask`
 1. I'm assuming that you know JQuery!
+
+More reading:
+[Quickstart](https://flask.palletsprojects.com/en/1.1.x/quickstart/#quickstart)
+[How to Run a Flask Application](https://www.twilio.com/blog/how-run-flask-application)
