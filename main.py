@@ -13,3 +13,6 @@ def hellothere(firstname, lastname):
 def squareit():
     number = int(request.form['pickanumber'])
     return 'And the square is: {}'.format(number*number)
+
+if __name__ == "__main__":
+    app.run()
